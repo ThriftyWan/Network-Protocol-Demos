@@ -1,6 +1,4 @@
-# PyProbe 🔍
-
-A network diagnostic toolkit built from scratch in Python. PyProbe reimplements classic network utilities at the socket level, demonstrating how DNS, ICMP, and TCP/IP protocols work under the hood.
+A network diagnostic toolkit built from scratch in Python. Reimplements classic network utilities at the socket level, demonstrating how DNS, ICMP, and TCP/IP protocols work under the hood.
 
 ## Features
 
@@ -14,7 +12,7 @@ A network diagnostic toolkit built from scratch in Python. PyProbe reimplements 
 
 ## How it works
 
-Rather than using high-level libraries, PyProbe builds and parses binary packets manually using Python's `socket` and `struct` modules — the same way real network tools work at the OS level.
+Rather than using high-level libraries, it builds and parses binary packets manually using Python's `socket` and `struct` modules — the same way real network tools work at the OS level.
 
 - **DNS** — constructs a DNS query packet by hand in label-encoded wire format and parses the binary response
 - **Ping** — sends raw ICMP echo requests with a manually computed one's complement checksum
